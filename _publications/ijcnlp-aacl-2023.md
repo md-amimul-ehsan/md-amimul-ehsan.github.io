@@ -1,0 +1,12 @@
+---
+title: "Question Answer Generation in Bengali: Mitigating the scarcity of QA datasets in a low-resource language"
+collection: publications
+permalink: /publication/2023.ijcnlp-main.29
+excerpt:
+date: 2023-11-01
+venue: "13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP-AACL 2023)"
+paperurl: "https://aclanthology.org/2023.ijcnlp-main.29.pdf"
+citation: "Md Shihab Shahriar, Ahmad Al Fayad Chowdhury, Md. Amimul Ehsan, and Abu Raihan Kamal. 2023. Question Answer Generation in Bengali: Mitigating the scarcity of QA datasets in a low-resource language. In Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers), pages 430–441, Nusa Dua, Bali. Association for Computational Linguistics."
+---
+
+The scarcity of comprehensive, high-quality Question-Answering (QA) datasets in lowresource languages has greatly limited the progress of research on QA for these languages. This has inspired research on Question-Answer Generation (QAG) which seeks to synthetically generate QA pairs and minimize the human effort required to compile labeled datasets. In this paper, we present the first QAG pipeline for the Bengali language, which consists of an answer span extraction model, a question generation model, and roundtrip consistency filtering to discard inconsistent QA pairs. To train our QAG pipeline, we translate SQuAD1.1 and SQuAD2.0 using the state-of-the-art NLLB machine translation model and accurately mark the answer spans using a novel embedding-based answer alignment algorithm to construct two Bengali QA datasets that we show are superior to the only two existing machine-translated datasets in terms of quality and quantity. We use our QAG pipeline to generate more than 170,000 QA pairs to build BanglaQA, a synthetic QA dataset from 16,000 Bengali news articles spanning 5 different news categories. We demonstrate the quality of BanglaQA by human evaluation on a variety of metrics. The bestperforming model among several baselines on our dataset achieves an F1 score of 86.14 falling behind human performance of 95.72 F1. Our codebase and curated datasets are publicly available at https://github.com/shihabshahriar16/BengaliQAG.git.
